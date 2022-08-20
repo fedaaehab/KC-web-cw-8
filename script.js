@@ -17,7 +17,7 @@ grades.push(99)
 
 // طبّق الخطوة 6 أسفل هذا الكومنت
 
-all_grades_div.forEach(element => {
+grades.forEach(element => {
   
   all_grades_div.innerHTML += `<div>${element}</div>`;
 });
@@ -28,7 +28,9 @@ function search() {
   // طبّق الخطوة 7 أسفل هذا الكومنت
   
 let filteredGrades = grades.filter((x) => x == inputValue);
-
+if (inputValue!=grades){
+  console.log("الدرجة غير موجوده")
+}
 
 }
 
