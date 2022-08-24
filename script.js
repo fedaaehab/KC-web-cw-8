@@ -28,11 +28,16 @@ function search() {
   // طبّق الخطوة 7 أسفل هذا الكومنت
   
 let filteredGrades = grades.filter((x) => x == inputValue);
-if (inputValue!=grades){
-  console.log("الدرجة غير موجوده")
+
+ if(inputValue==filteredGrades){
+ console.log(filteredGrades) 
+ }
+ else if(inputValue!=filteredGrades){
+ console.log('الدرجة غير موجودة') 
+ }
 }
 
-}
+
 
 // طبّق الخطوة 8 و 9 أسفل هذا الكومنت
 
