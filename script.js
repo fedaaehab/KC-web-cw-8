@@ -17,10 +17,27 @@ grades.push(99)
 
 // طبّق الخطوة 6 أسفل هذا الكومنت
 
-grades.forEach(element => {
+//grades.forEach(element => {
   
+ // all_grades_div.innerHTML += `<div>${element}</div>`;
+//});
+for (let index = 0; index < grades.length; index++) {
+  let element = grades[index];
   all_grades_div.innerHTML += `<div>${element}</div>`;
-});
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 function search() {
   let inputValue = document.getElementById("input").value;
